@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Membuat Menu Dropdown</title>
+
+	<style type="text/css">
+	html,body {
+		padding: 0;
+		margin: 0;
+		font-family: sans-serif;
+        color: #e40000;
+	}
+
+    body {
+    background: url('logoupb.png');
+    background-size: cover;
+    background-attachment: fixed;
+    }
+ 
+	.menu-dimasreza{
+		background-color: #09008b;;
+	}
+ 
+	.menu-dimasreza ul {
+		list-style-type: none;
+		margin: 0;
+		padding: 0;
+		overflow: hidden;
+	}
+ 
+	.menu-dimasreza > ul > li {
+		float: left;
+	}
+ 
+	
+	.menu-dimasreza li a {
+		display: inline-block;
+		color: #ffffff;
+		text-align: center;
+		padding: 14px 16px;
+		text-decoration: none;
+	}
+ 
+	.menu-dimasreza li a:hover{
+		background-color: #e40000;
+	}
+ 
+	li.dropdown {
+		display: inline-block;
+	}
+ 
+	.dropdown:hover .isi-dropdown {
+		display: block;
+	}
+ 
+	.isi-dropdown a:hover {
+		color: rgb(0, 0, 0) !important;
+	}
+ 
+	.isi-dropdown {
+		position: absolute;
+		display: none;
+		box-shadow: 0px 8px 16px 0px #09008b;
+		z-index: 1;
+		background-color: rgb(255, 255, 255);
+	}
+ 
+	.isi-dropdown a {
+		color: #e40000 !important;
+	}
+ 
+	.isi-dropdown a:hover {
+		color: #e40000 !important;
+		background: #09008b !important;
+	}
+</style>
+ 
+ <!---Dropdown Menu--->
+<header class="header">
+	<div class="menu-dimasreza">
+ 
+		<ul>
+			<li><a href="#">Home</a></li>
+			<li><a href="#">Pemrograman Web TI.19.A.2</a></li>
+            <li class="dropdown"><a href="#">Dosen</a>
+                <ul class="isi-dropdown">
+                <li><a href="#">Pak Agung Nugroho, S.Kom.,M.Kom.,</a></li>
+        </ul>
+            <li class="dropdown"><a href="#">Tugas</a>
+				<ul class="isi-dropdown">
+					<li><a href="#">Membuat HTML Dasar</a></li>
+					<li><a href="#">Membuat CSS Dasar</a></li>
+					<li><a href="#">Membuat List, Tabel, dan Form</a></li>
+				</ul>
+	</div>
+</header>
+<br/>
+
+<center>
+	<h1>Dropdown Menu dan Listbox </h1>
+</center>
+ 
+<!---Listbox Menu--->
+<p><b>LISTBOX MENU</b></p>
+Nama   :<input type="text" name="name"><br><br>
+NIM    :<input type="text" name="name"><br><br>
+Kelas  :<select multiple>
+    <option value=>TI.19.A.1</option>
+    <option value=>TI.19.A.2</option>
+    <option value=>TI.19.A.3</option>
+    </select>
+    <br><br><input type="submit" value="KONFIRMASI">
+</body>
+</html>
